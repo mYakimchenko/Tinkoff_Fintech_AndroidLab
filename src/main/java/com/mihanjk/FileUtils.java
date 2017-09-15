@@ -22,10 +22,9 @@ public class FileUtils {
             while ((line = reader.readLine()) != null) {
                 if (line.trim().contains(target)) return line;
             }
-            return null;
         } catch (java.io.IOException e) {
             System.err.println("Can't write into file: " + NAME_OF_FILE);
         }
-
+        return null;
     }
 }

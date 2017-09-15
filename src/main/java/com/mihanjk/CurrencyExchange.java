@@ -8,12 +8,12 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.Callable;
 
-public class getJsonCurrencyExchange implements Callable<String> {
+public class CurrencyExchange implements Callable<String> {
     private static final String PREFIX = "http://api.fixer.io/latest?";
     private final Currency from;
     private final Currency to;
 
-    public getJsonCurrencyExchange(Currency from, Currency to) {
+    public CurrencyExchange(Currency from, Currency to) {
         this.from = from;
         this.to = to;
     }
