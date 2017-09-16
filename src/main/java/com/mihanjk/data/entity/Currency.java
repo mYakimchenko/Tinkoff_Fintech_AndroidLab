@@ -1,4 +1,4 @@
-package com.mihanjk;
+package com.mihanjk.data.entity;
 
 public enum Currency {
     AUD, GBP, KRW, SEK,
